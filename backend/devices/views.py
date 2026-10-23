@@ -7,7 +7,12 @@
 # def showdevices(request):
 
 #     devices=get_devices() #call imene's function
+from django.http import JsonResponse
+from .wmi_scripts import get_devices
 
+def showdevices(request):
+    devices = get_devices()
+    return JsonResponse({"status": "success", "devices": devices})
 #     context={
 #         'devices': devices
 #     }
