@@ -13,13 +13,13 @@ def get_devices():
                 "friendly_name": getattr(d, "Caption", "Inconnu"),
                 "class": getattr(d, "PNPClass", "Inconnu"),
                 "status": getattr(d, "Status", "Inconnu"),
-                               "mac_address": getattr(d, "MACAddress", "Inconnu"),
+                 "mac_address": getattr(d, "MACAddress", "Inconnu"),
                 "manufacturer": getattr(d, "Manufacturer", "Inconnu"),
                 "pilote": getattr(d, "Service", "Inconnu"), 
                 "system_name": getattr(d, "SystemName", "Inconnu"),
                 
               
-                "pilote": getattr(d, "Service", "Inconnu"),
+                
             })
         return devices
     except Exception as e:
