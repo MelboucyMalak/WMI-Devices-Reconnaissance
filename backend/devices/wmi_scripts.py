@@ -18,17 +18,6 @@ def get_devices():
     except Exception as e:
         return [{"error": str(e)}]
 
-def get_pc_model():
-    pythoncom.CoInitialize()
-    try:
-        c = wmi.WMI()
-        system = c.Win32_ComputerSystem()[0]
-        return system.Model
-    except Exception as e:
-        return "Inconnu"
-
-
-    
 
 
 #device wa7ed fih y5rjlk les characteristiques ta3o
@@ -54,14 +43,3 @@ def get_device(device_id):
     except Exception as e:
         return [{"error": str(e)}]
 
-
-
-
-def get_pc_model():
-    pythoncom.CoInitialize()
-    try:
-        c = wmi.WMI()
-        system = c.Win32_ComputerSystem()[0]
-        return system.Model
-    except Exception as e:
-        return "Inconnu"
