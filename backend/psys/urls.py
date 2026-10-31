@@ -7,5 +7,4 @@ urlpatterns = [
     # path('', include('homepage.urls')),
     path('devices/', include('devices.api.urls')),
     path('screen/', include('screen.api.urls')),
-    path('users/', include('users.api.urls')),
 ]

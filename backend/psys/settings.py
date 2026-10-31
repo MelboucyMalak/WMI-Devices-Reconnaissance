@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'devices.apps.DevicesConfig',
     'screen.apps.ScreenConfig',
-    'users.apps.UsersConfig',
     'rest_framework',
     'rest_framework.authtoken',
     # 'homepage.apps.HomepageConfig',
